@@ -1,0 +1,33 @@
+How to setup and Initialize Terraform 
+
+1) go to file explorer look for TheoWAF folder and click through the folders until you get to the terraform folder
+2) create a new folder for the terraform project you will be working on.
+3) within the folder right click then click open "Open Gitbash here"
+4) In the gitbash terminal type "touch 0-auth.tf". a file should be created in the current folder you are in on file explorer
+5) then type "code ." 
+6) this will then open up Visual studio code where you will be able to work with Terraform
+7) Go to theo's github repo for class 5 (https://github.com/psamuels496/class5.git)
+8) from the github repo raw copy the "0-auth.tf" file.
+9) then in visual studio code click on the "0-auth.tf" file and paste the raw copied data in the code section from the repo
+10) make sure to save the data in Visual studio code by pressing "Ctrl + S"
+11) then click at the top tabs open new terminal and open up gitbash ( you can set gitbash as the default terminal that opens in visual studio code)
+12) In the gitbash terminal within Visual studio code you type in the command "terraform init"
+*This will initialize terraform and will create 2 new files in the folder 1) .terraform and 2).terraform.lock.hcl.  YOU ARE NEVER TO TOUCH THESE FILES OR MESS WITH THESE FILES IN ANYWAY AND THEY ARE TO BE LEFT ALONE EVEN AFTER YOU ARE FINISHED WITH YOUR WORK!!!
+13)  you can then type in arrons gitignore command "curl -O --ssl-no-revoke https://raw.githubusercontent.com/aaron-dm-mcdonald/aws-image-resizer/refs/heads/main/.gitignore
+" to create a gitignore file within the folder. THIS IS ALSO TO NEVER BE TOUCHED OR MODIFY IN ANYWAY. 
+14) next type in the command "terraform validate"
+15) then type "terraform plan"
+16) lastly type "terraform apply"
+*after  typing "terraform apply" this will create a state file called "terraform.tfstate*  THIS FILE IS ALSO TO NEVER BE TOUCHED OR MODIFIED IN ANYWAY AS IT IS HIGHLY SENSITIVE.
+
+Programs used:
+1) File explorer
+2) Gitbash
+3) Github
+4) Visual studio code
+
+FILES THAT SHOULD NOT BE ALTERED OR MODIFIED:
+1) .terraform
+2) .terraform.lock.hcl
+3) . gitignore
+4) terraform.tfstate
